@@ -1,0 +1,10 @@
+[
+  { "id": "saibaman", "nome": "Saibaman", "poder": 1200, "descricao": "Guerreiro semente descartável plantado pelos Saiyajins." },
+  { "id": "raditz", "nome": "Raditz", "poder": 1500, "descricao": "Guerreiro Saiyajin invasor e irmão de Goku." },
+  { "id": "nappa", "nome": "Nappa", "poder": 4000, "descricao": "Comandante bruto e impiedoso dos Saiyajins." },
+  { "id": "ginyu", "nome": "Capitão Ginyu", "poder": 120000, "descricao": "Líder extravagante das Forças Especiais de Freeza." },
+  { "id": "freeza", "nome": "Freeza (Forma Final)", "poder": 120000000, "descricao": "Tirano galáctico em seu poder máximo em Namekusei." },
+  { "id": "cell", "nome": "Cell Perfeito", "poder": 450000000, "descricao": "Bio-androide com células dos maiores guerreiros do universo." },
+  { "id": "kidbuu", "nome": "Kid Buu", "poder": 1150000000, "descricao": "Forma original, caótica e descontrolada do Majin Buu." },
+  { "id": "jiren", "nome": "Jiren", "poder": 1600000000, "descricao": "Poder absoluto e inabalável da Tropa do Orgulho do Universo 11." }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "saiyajin",
+    "nome": "Saiyajin",
+    "icone": "⚡",
+    "origem": "Planeta Vegeta",
+    "cor": "#f5c518",
+    "descricao": "Guerreiros que ficam mais fortes a cada batalha e superam qualquer limite.",
+    "formas": [
+      { "nome": "Forma Base", "poder": 8000 },
+      { "nome": "Super Saiyajin", "poder": 400000 },
+      { "nome": "Super Saiyajin 2", "poder": 800000 },
+      { "nome": "Super Saiyajin 3", "poder": 3200000 },
+      { "nome": "Super Saiyajin Deus", "poder": 20000000 },
+      { "nome": "Super Saiyajin Blue", "poder": 200000000 },
+      { "nome": "Ultra Instinto", "poder": 1000000000 }
+    ]
+  },
+  {
+    "id": "namekuseijin",
+    "nome": "Namekuseijin",
+    "icone": "🌿",
+    "origem": "Planeta Namekusei",
+    "cor": "#4cd964",
+    "descricao": "Guerreiros sábios, mestres da fusão espiritual e regeneração celular.",
+    "formas": [
+      { "nome": "Forma Base", "poder": 3000 },
+      { "nome": "Fusão com Nail", "poder": 120000 },
+      { "nome": "Super Namekuseijin", "poder": 900000 },
+      { "nome": "Namekuseijin Gigante", "poder": 5000000 },
+      { "nome": "Orange Piccolo", "poder": 500000000 }
+    ]
+  },
+  {
+    "id": "freeza",
+    "nome": "Raça do Freeza",
+    "icone": "🟣",
+    "origem": "Império Cósmico",
+    "cor": "#b366ff",
+    "descricao": "Conquistadores implacáveis do universo, sempre escondendo o poder real.",
+    "formas": [
+      { "nome": "Primeira Forma", "poder": 530000 },
+      { "nome": "Segunda Forma", "poder": 1000000 },
+      { "nome": "Terceira Forma", "poder": 2000000 },
+      { "nome": "Forma Final", "poder": 120000000 },
+      { "nome": "Golden Freeza", "poder": 1000000000 }
+    ]
+  },
+  {
+    "id": "humano",
+    "nome": "Humano",
+    "icone": "🥋",
+    "origem": "Planeta Terra",
+    "cor": "#4fc3f7",
+    "descricao": "Sem sangue alienígena, mas com foco em técnicas ancestrais e coragem.",
+    "formas": [
+      { "nome": "Forma Base", "poder": 1000 },
+      { "nome": "Modo Kaioken", "poder": 10000 },
+      { "nome": "Ki Total", "poder": 100000 },
+      { "nome": "Mestre do Ki", "poder": 1000000 }
+    ]
+  },
+  {
+    "id": "majin",
+    "nome": "Majin",
+    "icone": "🔮",
+    "origem": "Magia Primordial",
+    "cor": "#ff6fb5",
+    "descricao": "Criaturas de pura magia caótica com regeneração e poder descomunal.",
+    "formas": [
+      { "nome": "Majin Buu Gordo", "poder": 5000000 },
+      { "nome": "Super Buu", "poder": 120000000 },
+      { "nome": "Buu Absorvido", "poder": 700000000 },
+      { "nome": "Kid Buu", "poder": 1500000000 }
+    ]
+  }
+]

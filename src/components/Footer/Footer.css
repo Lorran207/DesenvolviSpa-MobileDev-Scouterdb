@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 16px;
+  background: #080f24;
+  border-top: 1px solid #1a2c5a;
+  color: #6f83ad;
+  font-size: 0.82rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-main {
+  margin: 0;
+  color: #9fb3d9;
+}
+
+.footer-credits {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #6f83ad;
+}

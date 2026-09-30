@@ -1,0 +1,477 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #060b1b;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(255, 138, 0, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(61, 255, 162, 0.04) 0%, transparent 50%);
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 32px 16px 48px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* secao de apresentacao do radar */
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.scouter-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ff8a00;
+  background: rgba(255, 138, 0, 0.1);
+  border: 1px solid rgba(255, 138, 0, 0.3);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.home-title {
+  margin: 4px 0 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e8eefc;
+  letter-spacing: 1px;
+}
+
+.page-intro {
+  margin: 0;
+  color: #9fb3d9;
+  text-align: center;
+  max-width: 580px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* barra de estatisticas */
+.stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 12px 24px;
+  background: rgba(14, 26, 61, 0.6);
+  border: 1px solid #1a2c5a;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-number {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3dffa2;
+  letter-spacing: 0.5px;
+}
+
+.stat-desc {
+  font-size: 0.75rem;
+  color: #8fa5cf;
+  text-transform: uppercase;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 32px;
+  background: #1a2c5a;
+}
+
+/* campo de busca e filtro */
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 460px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 18px;
+  padding-right: 80px;
+  background: #0d1738;
+  border: 1px solid #23376d;
+  border-radius: 8px;
+  color: #e8eefc;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff8a00;
+  box-shadow: 0 0 12px rgba(255, 138, 0, 0.35);
+}
+
+.search-input::placeholder {
+  color: #687ca3;
+}
+
+.btn-clear-search {
+  position: absolute;
+  right: 10px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: #9fb3d9;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-clear-search:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* grade de cards */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.empty-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 36px 20px;
+  background: #0d1738;
+  border: 1px dashed #23376d;
+  border-radius: 10px;
+  color: #9fb3d9;
+  text-align: center;
+}
+
+/* topo da tela do scouter */
+.scouter-top-nav {
+  display: flex;
+  width: 100%;
+  max-width: 420px;
+  justify-content: flex-start;
+}
+
+/* botoes de acao */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 460px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.btn-power {
+  background: linear-gradient(135deg, #ff8a00, #ff6b00);
+  color: #070e24;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 14px rgba(255, 138, 0, 0.35);
+  flex: 1 1 180px;
+}
+
+.btn-power:not(:disabled):hover {
+  background: linear-gradient(135deg, #ffa333, #ff8a00);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 138, 0, 0.5);
+}
+
+.btn-battle {
+  background: #142456;
+  border: 1px solid #3dffa2;
+  color: #3dffa2;
+  flex: 1 1 160px;
+}
+
+.btn-battle:hover {
+  background: #3dffa2;
+  color: #070e24;
+  box-shadow: 0 0 16px rgba(61, 255, 162, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-reset {
+  background: transparent;
+  color: #9fb3d9;
+  border: 1px solid #23376d;
+  flex: 0 1 auto;
+}
+
+.btn-reset:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #9fb3d9;
+  color: #ffffff;
+}
+
+/* painel do simulador de batalha com math.random */
+.battle-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 460px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.battle-win {
+  background: rgba(61, 255, 162, 0.08);
+  border: 2px solid #3dffa2;
+  box-shadow: 0 0 20px rgba(61, 255, 162, 0.2);
+}
+
+.battle-danger {
+  background: rgba(255, 82, 82, 0.08);
+  border: 2px solid #ff5252;
+  box-shadow: 0 0 20px rgba(255, 82, 82, 0.2);
+}
+
+.battle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.battle-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.battle-win .battle-badge {
+  color: #3dffa2;
+}
+
+.battle-danger .battle-badge {
+  color: #ff5252;
+}
+
+.btn-close-battle {
+  background: transparent;
+  border: none;
+  color: #8fa5cf;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.battle-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+.battle-fighter {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.fighter-role {
+  font-size: 0.7rem;
+  color: #8fa5cf;
+  text-transform: uppercase;
+}
+
+.battle-fighter strong {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.fighter-ki {
+  font-size: 0.82rem;
+  color: #3dffa2;
+  font-weight: 700;
+}
+
+.battle-vs {
+  font-weight: 700;
+  color: #ff8a00;
+  font-size: 1.1rem;
+}
+
+.battle-desc {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #b8c5e6;
+  line-height: 1.4;
+}
+
+.battle-conclusion {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.battle-win .battle-conclusion {
+  color: #3dffa2;
+}
+
+.battle-danger .battle-conclusion {
+  color: #ff8282;
+}
+
+/* trilha de transformacoes */
+.forma-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.forma-section-title {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #8fa5cf;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.forma-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.forma-lista li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid #23376d;
+  border-radius: 999px;
+  color: #6f83ad;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #0d1738;
+}
+
+.forma-lista li:hover {
+  border-color: #ff8a00;
+  color: #e8eefc;
+}
+
+.forma-step-num {
+  font-size: 0.72rem;
+  opacity: 0.7;
+}
+
+.forma-lista li.feita {
+  color: #b8c5e6;
+  border-color: #3dffa2;
+  background: rgba(61, 255, 162, 0.08);
+}
+
+.forma-lista li.ativa {
+  color: #070e24;
+  background: #3dffa2;
+  border-color: #3dffa2;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(61, 255, 162, 0.5);
+}
+
+/* foco e acessibilidade */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #3dffa2;
+  outline-offset: 2px;
+}
+
+/* responsividade para telas menores */
+@media (max-width: 600px) {
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .stats-bar {
+    gap: 12px;
+    padding: 10px 14px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .btn-power,
+  .btn-battle,
+  .btn-reset {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+}

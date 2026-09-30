@@ -1,0 +1,168 @@
+.race-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  padding: 22px 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #e8eefc;
+  background: #0d1738;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
+}
+
+.race-card:hover,
+.race-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: var(--aura);
+  box-shadow: 0 0 24px var(--aura), inset 0 0 16px rgba(0, 0, 0, 0.4);
+}
+
+/* cantoneiras tatica do scouter */
+.race-card-corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: var(--aura);
+  border-style: solid;
+  opacity: 0.6;
+}
+
+.race-card-corner.top-left {
+  top: 6px;
+  left: 6px;
+  border-width: 2px 0 0 2px;
+}
+
+.race-card-corner.top-right {
+  top: 6px;
+  right: 6px;
+  border-width: 2px 2px 0 0;
+}
+
+.race-card-corner.bottom-left {
+  bottom: 6px;
+  left: 6px;
+  border-width: 0 0 2px 2px;
+}
+
+.race-card-corner.bottom-right {
+  bottom: 6px;
+  right: 6px;
+  border-width: 0 2px 2px 0;
+}
+
+.race-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+}
+
+.race-card-origem {
+  color: #8fa5cf;
+  text-transform: uppercase;
+}
+
+.race-card-badge {
+  color: var(--aura);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--aura);
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.race-card-aura-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin: 6px 0;
+}
+
+.race-card-aura {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, var(--aura) 55%, transparent 75%);
+  filter: drop-shadow(0 0 10px var(--aura));
+  opacity: 0.85;
+}
+
+.race-card-icon {
+  position: relative;
+  font-size: 1.8rem;
+  z-index: 1;
+}
+
+.race-card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--aura);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.race-card-desc {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #b8c5e6;
+  min-height: 38px;
+}
+
+.race-card-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.stat-label {
+  color: #8fa5cf;
+  font-size: 0.75rem;
+}
+
+.stat-value {
+  color: #3dffa2;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.race-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--aura);
+  letter-spacing: 0.5px;
+}
+
+.action-arrow {
+  transition: transform 0.2s ease;
+}
+
+.race-card:hover .action-arrow {
+  transform: translateX(4px);
+}
