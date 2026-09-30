@@ -6,6 +6,12 @@ A aplicação simula um Scouter (medidor tático de ki do universo de Dragon Bal
 
 ---
 
+## Integrantes
+
+- Lorran Nascimento Dias
+- Vinicius Pacheco Marques Ribeiro
+
+---
 ## Requisitos Técnicos Atendidos (Conforme Avaliação)
 
 1. **Arquitetura de Componentes Modular (Pai/Filho)**:
